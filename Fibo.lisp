@@ -1,0 +1,15 @@
+(defun fibonacci ()
+  (print "Calculemos un numero n el termino de la serie Fibonacci, ingresa tu numero n: ")
+  (read)
+)
+
+(defun ope(fib)
+  (if (> fib 2)
+      (let ((rfib(* fib (factorial)))
+             (format t "%~s es ~s en la serie Fibonacci%" fib (float rfib))
+             rfib))
+  )
+)
+
+(let ((fibo (fibonacci)))
+  (ope fibo))
